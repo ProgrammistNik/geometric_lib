@@ -22,7 +22,7 @@ def calc(fig, func, size):
     return result
 
 
-if name == "main":
+if __name__ == "__main__":
     func = ''
     fig = ''
     size = list()
