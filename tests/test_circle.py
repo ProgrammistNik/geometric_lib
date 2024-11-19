@@ -2,8 +2,9 @@ import sys
 import os
 import pytest
 from circle import area, perimeter
-sys.path.insert\
+sys.path.insert(
     0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+)
 
 
 def test_area():
