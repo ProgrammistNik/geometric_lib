@@ -1,6 +1,6 @@
-import circle  
-import square  
-import triangle  
+import circle  # noqa: F401
+import square  # noqa: F401
+import triangle  # noqa: F401
 
 figs = ['circle', 'square', 'triangle']
 funcs = ['perimeter', 'area']
@@ -34,6 +34,7 @@ if __name__ == "__main__":
         func = input(f"Enter function name, available are {funcs}:\n")
 
     while len(size) != sizes.get(f"{func}-{fig}", 1):
-        size = list(map(int, input("Input figure sizes separated by space, 1 for circle and square\n").split(' ')))
+        size = list(map(int, input("Input figure sizes separated by space,\
+        1 for circle and square\n").split(' ')))
 
     print(calc(fig, func, size))
