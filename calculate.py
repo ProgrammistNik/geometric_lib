@@ -15,9 +15,9 @@ sizes = {
 
 
 def calc(fig, func, size):
-    assert fig in figs, f"Invalid figure: {fig}. Allowed values are {figs}."
-    assert func in funcs, "Invalid function: {func}. Allowed values are {funcs}."
-    assert len(size) == sizes.get(f"{func}-{fig}", 1), f"Invalid number of parameters for {func} of {fig}."
+    assert fig in figs, "Error"
+    assert func in funcs, "Error"
+    assert len(size) == sizes.get(f"{func}-{fig}", 1), "Error"
     result = eval(f'{fig}.{func}(*{size})')
     return result
 
