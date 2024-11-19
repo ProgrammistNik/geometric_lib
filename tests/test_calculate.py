@@ -2,7 +2,9 @@ import sys
 import os
 import pytest
 from calculate import calc
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.insert(
+    0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+)
 
 
 def test_square_area():
@@ -47,6 +49,7 @@ def test_invalid_size_circle():
 def test_triangle_perimeter():
     result = calc('triangle', 'perimeter', [5, 12, 13])
     assert result == 30
+
 
 def test_invalid_function():
     with pytest.raises(AssertionError, match="Error"):
