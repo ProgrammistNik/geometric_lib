@@ -11,7 +11,7 @@ sys.path.insert(
 def test_area():
     result = area(2)
     expected_result = math.pi * 2 * 2
-    assert result == pytest.approx(expected_result, rel=5e-2)
+    assert result == pytest.approx(expected_result, rel=1e-2)
 
 
 def test_area_invalid():
@@ -22,7 +22,7 @@ def test_area_invalid():
 def test_perimeter():
     result = perimeter(2)
     expected_result = 2 * math.pi * 2
-    assert result == pytest.approx(expected_result, rel=5e-2)
+    assert result == pytest.approx(expected_result, rel=1e-2)
 
 
 def test_perimeter_invalid():
