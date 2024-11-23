@@ -1,6 +1,7 @@
+import math
 def area(r):
-    return 3.1415 * r * r
+    return math.pi * r * r
 
 
 def perimeter(r):
-    return 2 * 3.1415 * r
+    return 2 * math.pi * r
