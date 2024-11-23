@@ -1,5 +1,6 @@
 import sys
 import os
+import math
 import pytest
 from calculate import calc
 sys.path.append(
@@ -21,13 +22,13 @@ def test_square_perimeter():
 
 def test_circle_area():
     result = calc('circle', 'area', [2])
-    expected_result = 12.566
+    expected_result = math.pi * 2 * 2
     assert result == pytest.approx(expected_result, rel=5e-2)
 
 
 def test_circle_perimeter():
     result = calc('circle', 'perimeter', [2])
-    expected_result = 12.566
+    expected_result = 2 * math.pi * 2
     assert result == pytest.approx(expected_result, rel=5e-2)
 
 
